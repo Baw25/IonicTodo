@@ -14,11 +14,28 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class AddItemPage {
 
+  title;
+  description;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddItemPage');
+  }
+
+  saveItem(){
+    let newItem = {
+      title: this.title,
+      description: this.description
+    };
+
+    this.view.dismiss(newItem);
+  }
+
+  close(){
+    this.view.dismiss();
   }
 
 }
