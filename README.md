@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+# Todo 
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
 
 ## How to use this template
@@ -25,7 +25,3 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
-=======
-# IonicTodo
-Simple Ionic Todo App 
->>>>>>> c33427d3830d8b6faab98dc1c42797a5f7399954
