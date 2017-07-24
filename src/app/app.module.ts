@@ -4,9 +4,10 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { IonicStorageModule } from '@ionic/storage';
-
+// Pages
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { HomeChoicePage } from '../pages/home-choice/home-choice';
 import { AddItemPage } from '../pages/add-item/add-item';
 import { ItemDetailPage } from '../pages/item-detail/item-detail';
 import { DataProvider } from '../providers/data/data';
@@ -16,6 +17,7 @@ import { DataProvider } from '../providers/data/data';
   declarations: [
     MyApp,
     HomePage,
+    HomeChoicePage,
     AddItemPage,
     ItemDetailPage
   ],
@@ -28,6 +30,7 @@ import { DataProvider } from '../providers/data/data';
   entryComponents: [
     MyApp,
     HomePage,
+    HomeChoicePage,
     AddItemPage,
     ItemDetailPage
   ],

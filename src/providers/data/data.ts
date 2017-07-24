@@ -17,4 +17,13 @@ export class DataProvider {
     this.storage.set('todos', newData);
   }
 
+  getWorkouts(){
+    return this.storage.get('workouts');
+  }
+
+  saveWorkout(workout){
+    let newWorkout = JSON.stringify(workout);
+    this.storage.set('workouts', newWorkout);
+  }
+
 }
