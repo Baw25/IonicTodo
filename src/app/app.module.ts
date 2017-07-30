@@ -12,6 +12,17 @@ import { AddItemPage } from '../pages/add-item/add-item';
 import { ItemDetailPage } from '../pages/item-detail/item-detail';
 import { DataProvider } from '../providers/data/data';
 
+import { AngularFireModule } from 'angularfire2';
+
+export const firebaseConfig = {
+  apiKey: "AIzaSyD2_ZacDQHco8zkQ_tntyajl1ObhYqRFdY",
+  authDomain: "workouts-6d0d5.firebaseapp.com",
+  databaseURL: "https://workouts-6d0d5.firebaseio.com",
+  projectId: "workouts-6d0d5",
+  storageBucket: "workouts-6d0d5.appspot.com",
+  messagingSenderId: "1033497813785"
+};
+
 
 @NgModule({
   declarations: [
@@ -24,7 +35,8 @@ import { DataProvider } from '../providers/data/data';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    IonicStorageModule.forRoot()
+    IonicStorageModule.forRoot(),
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
