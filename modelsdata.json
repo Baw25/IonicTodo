@@ -1,0 +1,119 @@
+/*
+This is a file to model the data
+
+What is the most important thing about
+Models:
+- Users
+- Workout
+- Cardio Exercise
+- Resistance Exercise
+
+
+*/
+
+/*Users*/
+{
+  "Key": {
+    "email": "email",
+    "userName": "userName",
+    "password": "password"
+  }
+}
+
+/*Workout Document*/
+type --> cardio, resistance, both
+
+{
+  "userName": "baw25",
+  "email": "baw@baw.com",
+  "password": "12345",
+  "workouts": [
+    {
+    "createdAt": 1501381943331,
+    "updatedAt":1501381943331,
+    "type": "mixed",
+    "location": "Soma SF",
+    "title": "Blake Sunday Workout",
+    "startDateTime": 1501381943331,
+    "endDateTime": 1501381943331,
+    "completed": true,
+
+    "cardioExercises": [
+      {
+        "Key": {
+          "title": "running",
+          "durationMin": 30,
+          "restDuration": 2,
+          "sets": 2,
+          "targetDist": 3.5,
+          "resultDist": 2.3,
+          "percentMax": 70,
+          "avgResultHR": null,
+          "targetSplit": 10,
+          "resultSplit": 10,
+          "restTime": 0
+        }
+      }
+    ],
+    "resistanceExercise": [
+        {
+          "Key": {
+            "title": "running",
+            "durationMin": 30,
+            "restDuration": 2,
+            "sets": 2,
+            "targetDist": 3.5,
+            "resultDist": 2.3,
+            "percentMax": 70,
+            "avgResultHR": null,
+            "targetSplit": 10,
+            "resultSplit": 10,
+            "restTime": 0
+          }
+        }
+      ]
+    }
+  ],
+  "otherMetaData": "stuff goes here"
+}
+
+
+/*WeightsDocument*/
+/*
+
+*/
+
+{
+  "Key": {
+    "title": "squats",
+    "sets": 2,
+    "reps": 12,
+    "weightPounds": 200,
+    "restTimemSec": 120,
+    "percentMax": 75,
+    "superSet": false,
+    "completed?": true,
+  }
+}
+
+/*CardioDocument*/
+/*
+distance could be measured in miles or km
+
+*/
+
+{
+  "Key": {
+    "title": "running",
+    "durationMin": 30,
+    "restDuration": 2,
+    "sets": 2,
+    "targetDist": 3.5,
+    "resultDist": 2.3,
+    "percentMax": 70,
+    "avgResultHR": null,
+    "targetSplit": 10,
+    "resultSplit": 10,
+    "restTime": 0
+  }
+}
