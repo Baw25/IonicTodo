@@ -13,6 +13,9 @@ import { ItemDetailPage } from '../pages/item-detail/item-detail';
 import { DataProvider } from '../providers/data/data';
 
 import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+// import { DatabaseserviceProvider } from '../providers/databaseservice/databaseservice';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyD2_ZacDQHco8zkQ_tntyajl1ObhYqRFdY",
@@ -36,7 +39,9 @@ export const firebaseConfig = {
     BrowserModule,
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot(),
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
